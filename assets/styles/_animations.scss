@@ -1,0 +1,13 @@
+@mixin animate-spin-slow() {
+  animation: spin 2000ms linear infinite;
+
+  @keyframes spin {
+    from {
+      transform:rotate(0deg);
+    }
+
+    to {
+      transform:rotate(360deg);
+    }
+  }
+}
