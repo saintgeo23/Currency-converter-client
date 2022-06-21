@@ -3,8 +3,14 @@ export default {
   name: 'AppConfirmation',
 
   props: {
-    base: String,
-    quote: String,
+    base: {
+      type: String,
+      default: '',
+    },
+    quote: {
+      type: String,
+      default: '',
+    },
   },
 
   computed: {
