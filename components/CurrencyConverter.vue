@@ -99,9 +99,8 @@ export default {
           this.isInitializing = false
           this.getCurrentCourse()
         })
-        .catch((err) => {
-          console.error(err)
-        })
+        // eslint-disable-next-line no-console
+        .catch(console.error)
     },
 
     getCurrentCourse () {
@@ -130,8 +129,10 @@ export default {
             resolve()
           })
           .catch((err) => {
+            // eslint-disable-next-line no-console
             console.error(err)
             this.course = null
+
             reject(new Error('Getting course has failed'))
           })
       })

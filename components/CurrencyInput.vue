@@ -3,8 +3,14 @@ export default {
   name: 'CurrencyInput',
 
   props: {
-    placeholder: String,
-    calculatedAmount: String,
+    placeholder: {
+      type: String,
+      default: '',
+    },
+    calculatedAmount: {
+      type: String,
+      default: '',
+    },
   },
 
   data () {

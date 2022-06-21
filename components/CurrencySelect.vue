@@ -7,7 +7,10 @@ export default {
       type: Array,
       default: () => [],
     },
-    value: String,
+    value: {
+      type: String,
+      default: '',
+    },
   },
 
   data () {
